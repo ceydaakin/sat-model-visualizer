@@ -1,0 +1,53 @@
+========================================================================
+SAT MODEL VISUALIZER  --  OUTPUT
+Status: SAT
+Variables: 3    Clauses: 4    Trace events: 11
+========================================================================
+
+--- 1. ROW FORM (MODEL VERIFICATION) ---
+
+Model: A=0, B=0, C=1
+
+C1 | - +   | 1 + 0 = 1
+C2 |   - - | 1 + 0 = 1
+C3 | +   + | 0 + 1 = 1
+C4 |   - + | 1 + 1 = 1
+
+--- 2. INFERENCE FORM (LOGICAL TRACE) ---
+
+C1 | -A + B
+C2 | -B + -C
+C3 | C + A
+C4 | -B + C
+---------- Decision L=2
+C2 | -C
+C3 | C + A
+C4 | C
+---------- Unit L=-3
+C3 | A
+C4 | 0 | Conflict
+---------- Decision L=-2
+C1 | -A
+C3 | C + A
+---------- Unit L=-1
+C3 | C
+---------- Unit L=3
+Satisfied
+
+--- 3. TREE FORM (SEARCH TREE) ---
+
+Root
+ |
+ |----- Decide B = 1
+ |       |
+ |       |----- Unit C = 0
+ |       |
+ |       |----- Conflict!
+ |
+ |----- Decide B = 0
+         |
+         |----- Unit A = 0
+         |
+         |----- Unit C = 1
+         |
+         |----- Satisfied!

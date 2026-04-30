@@ -1,0 +1,12 @@
+--- STATUS ---
+STATUS: PROPAGATED
+DL: 1
+
+--- BCP EXECUTION LOG (Clause Status Changes & Assignments) ---
+[DL1] DECIDE     L=-1   |
+
+--- CURRENT VARIABLE STATE AFTER BCP ---
+1    | FALSE
+2    | UNASSIGNED
+3    | UNASSIGNED
+4    | UNASSIGNED

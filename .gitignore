@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+venv/
+.venv/
+env/
+.env
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Generated visualiser outputs
+# Keep the test-fixture outputs committed (they double as golden samples)
+# but ignore ad-hoc runs at the repo root.
+/output.txt
+/*.out.txt

@@ -1,0 +1,17 @@
+--- STATUS ---
+STATUS: UNSAT
+DL: 2
+CONFLICT_ID: 4
+
+--- BCP EXECUTION LOG (Clause Status Changes & Assignments) ---
+[DL2] DECIDE     L=2    |
+[DL2] UNIT       L=3    | C3
+[DL2] ASSIGN     L=3    |
+[DL2] CONFLICT          | Violation: C4
+[DL2] BACKTRACK         |
+
+--- CURRENT VARIABLE STATE AFTER BCP ---
+1    | FALSE
+2    | TRUE
+3    | TRUE
+4    | UNASSIGNED

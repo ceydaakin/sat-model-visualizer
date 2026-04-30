@@ -1,0 +1,7 @@
+STATUS: SAT
+
+--- FINAL VARIABLE STATE ---
+1    | FALSE
+2    | FALSE
+3    | FALSE
+4    | TRUE

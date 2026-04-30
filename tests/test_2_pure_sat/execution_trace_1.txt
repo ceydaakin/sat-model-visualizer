@@ -1,0 +1,13 @@
+--- STATUS ---
+STATUS: SAT
+DL: 1
+
+--- BCP EXECUTION LOG (Clause Status Changes & Assignments) ---
+[DL1] DECIDE     L=1    |
+[DL1] UNIT       L=2    | C2
+[DL1] ASSIGN     L=2    |
+[DL1] SATISFIED         |
+
+--- CURRENT VARIABLE STATE AFTER BCP ---
+1    | TRUE
+2    | TRUE
